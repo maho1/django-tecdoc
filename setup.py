@@ -15,7 +15,7 @@ setup(
     version=VERSION,
 
     description='Itegration django and tecdoc db',
-    long_description=file(
+    long_description=open(
         os.path.join(
             os.path.dirname(__file__),
             'README.md'
@@ -27,7 +27,7 @@ setup(
     url='http://github.com/suvit/django-tecdoc',
     zip_safe=False,
     packages=find_packages(exclude=['docs', 'examples', 'tests']),
-    install_requires=file(
+    install_requires=open(
         os.path.join(
             os.path.dirname(__file__),
             'requirements.txt'
